@@ -5,6 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import Image from 'next/image';
 
 const ContactPage = () => {
   // Contact information
@@ -36,10 +37,12 @@ const ContactPage = () => {
           transition={{ duration: 0.5 }}
           className="mb-4"
         >
-          <img
+          <Image
             src="https://media.giphy.com/media/3o7TKU8RvQuomFfUUU/giphy.gif"
             alt="Animated Contact GIF"
             className="w-74 h-74 rounded-full object-cover"
+            width={400}
+            height={400}
           />
         </motion.div>
 
@@ -50,8 +53,8 @@ const ContactPage = () => {
         </h1>
 
         <p className="text-lg leading-relaxed text-center mb-6 text-gray-300 max-w-xl">
-          Feel free to reach out. I&apos;m always excited to connect and discuss new
-          opportunities.
+          Feel free to reach out. I&apos;m always excited to connect and discuss
+          new opportunities.
         </p>
 
         {/* Contact Information Section */}
