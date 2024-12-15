@@ -50,7 +50,7 @@ const ContactPage = () => {
         </h1>
 
         <p className="text-lg leading-relaxed text-center mb-6 text-gray-300 max-w-xl">
-          Feel free to reach out. I'm always excited to connect and discuss new
+          Feel free to reach out. I&apos;m always excited to connect and discuss new
           opportunities.
         </p>
 
