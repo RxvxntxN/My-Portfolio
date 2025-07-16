@@ -24,10 +24,10 @@ const Email = () => {
     // Replace with your EmailJS service ID, template ID, and public key
     emailjs
       .send(
-        'service_x5w8b5g', // e.g., 'service_abc123'
-        'template_u842dwo', // e.g., 'template_xyz456'
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         formData,
-        'T_JFHs2vU87OxpMAh' // e.g., 'user_123abc' (use Public Key, not Private!)
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         (response) => {
@@ -53,7 +53,7 @@ const Email = () => {
           </div>
           <h1 className="text-2xl font-bold text-teal-400 mb-2">Email Me !!</h1>
           <p className="text-[#E0E0E0] text-sm">
-            Send us a message and we'll get back to you
+            Send us a message and we&apos;ll get back to you
           </p>
         </div>
 
