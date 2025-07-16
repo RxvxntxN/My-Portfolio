@@ -51,9 +51,11 @@ const Email = () => {
           <div className="inline-flex items-center justify-center w-14 h-14 bg-teal-500 rounded-full mb-4 shadow-lg">
             <Mail className="w-7 h-7 text-white" />
           </div>
-          <h1 className="text-2xl font-bold text-teal-400 mb-2">Email Me !!</h1>
+          <h1 className="text-2xl font-bold text-teal-400 mb-2">
+            Email Me Directly !!
+          </h1>
           <p className="text-[#E0E0E0] text-sm">
-            Send us a message and we&apos;ll get back to you
+            Send me a message and I&apos;ll get back to you
           </p>
         </div>
 
@@ -68,7 +70,7 @@ const Email = () => {
                   Message sent successfully!
                 </p>
                 <p className="text-teal-300 text-xs">
-                  We&apos;ll get back to you soon.
+                  I&apos;ll get back to you soon.
                 </p>
               </div>
             </div>
