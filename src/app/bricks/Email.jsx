@@ -68,7 +68,7 @@ const Email = () => {
                   Message sent successfully!
                 </p>
                 <p className="text-teal-300 text-xs">
-                  We'll get back to you soon.
+                  We&apos;ll get back to you soon.
                 </p>
               </div>
             </div>
