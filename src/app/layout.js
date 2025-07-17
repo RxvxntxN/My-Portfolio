@@ -1,10 +1,9 @@
-import "./globals.css";
-import NavMenu from '@/app/bricks/Navbar'
-
+import './globals.css';
+import NavMenu from '@/app/bricks/Navbar';
 
 export const metadata = {
-  title: "Musabbir Real",
-  description: "My ultimate portfolio",
+  title: 'Musabbir Real',
+  description: 'My ultimate portfolio',
 };
 
 export default function RootLayout({ children }) {
@@ -12,9 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-stone-800">
         <NavMenu />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );
