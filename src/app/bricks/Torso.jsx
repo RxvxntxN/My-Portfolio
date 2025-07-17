@@ -1,10 +1,28 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Cement from './Cement';
 import Link from 'next/link';
 
 const Torso = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    // This code only runs on the client side
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768);
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="flex flex-col md:flex-row h-screen">
       {/* Left section - Content */}
@@ -18,7 +36,7 @@ const Torso = () => {
           </span>
           <p className="text-white text-sm md:text-base">
             I&apos;m always trying to bring real value and define problem{' '}
-            {window.innerWidth > 768 && <br />}
+            {isDesktop && <br />}
             with my codes. Welcome to my portfolio.
           </p>
           <div className="pt-2">
